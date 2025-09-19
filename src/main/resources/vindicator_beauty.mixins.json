@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.cunmin18.vindicator_beauty.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "IllagerEntityMixin",
+    "MobEntityMixin",
+    "WoodlandMansionGeneratorMixin",
+    "SimpleStructurePieceMixin",
+    "StructurePieceMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

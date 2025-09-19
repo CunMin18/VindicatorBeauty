@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "vindicator_beauty",
+  "version": "${version}",
+  "name": "VindicatorBeauty",
+  "description": "",
+  "authors": ["CunMin18"],
+  "contact": {},
+  "license": "CC BY-NC 4.0",
+  "icon": "assets/vindicator_beauty/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.cunmin18.vindicator_beauty.client.VindicatorBeautyDataGenerator"
+    ],
+    "client": [
+      "org.cunmin18.vindicator_beauty.client.VindicatorBeautyClient"
+    ],
+    "main": [
+      "org.cunmin18.vindicator_beauty.VindicatorBeauty"
+    ]
+  },
+  "mixins": [
+    "vindicator_beauty.mixins.json",
+    {
+      "config": "vindicator_beauty.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
